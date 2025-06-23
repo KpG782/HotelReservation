@@ -104,7 +104,7 @@ define('DB_PASS', 'your_password');
 
 ## 👥 Team & Roles
 
-- **Lead Developer:** Your Name
+- **Lead Developer:** Ken Patrick Garcia
 - **Collaborator:** Mark Angelo Rivera
 
 ---
