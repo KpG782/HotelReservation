@@ -1,6 +1,6 @@
-# HotelReservationSystemRiveraGarcia
+# HotelReservation
 
-**MVC-based PHP Hotel Reservation System** for managing room accommodations, bookings, billing, and inquiries.
+**Static HTML/CSS/JS Hotel Reservation System** for managing room accommodations, bookings, billing, and inquiries.
 
 > **Collaboration:** Built in partnership with Mark Angelo Rivera.
 
@@ -18,13 +18,11 @@
 
 ## 🛠️ Tech Stack
 
-- **Backend:** PHP 7.4+ (MVC pattern)
-- **Database:** MySQL/MariaDB (via PDO)
 - **Frontend:** HTML5, CSS3, Bootstrap 5, JavaScript (ES6+)
-- **Templating & Routing:** Custom `Router.php` + header/footer partials
+- **Templating & Routing:** Static HTML with header/footer partials
 - **Date & Time:** Bootstrap Datepicker
 - **Plugins:** Owl Carousel, Lightbox, Nice Select, ImagesLoaded, Isotope
-- **Server:** Apache with `mod_rewrite` enabled
+- **Deployment:** Any static web server (GitHub Pages or Vercel etc.)
 
 ---
 
@@ -32,22 +30,37 @@
 
 ```bash
 HotelReservationSystemRiveraGarcia/
-├── app/
-│   ├── controllers/        # MVC controllers
-│   ├── models/             # Data models (PDO)
-│   └── views/              # HTML/PHP templates & partials
-├── config/
-│   └── config.php          # DB credentials & global settings
-├── core/
-│   ├── Controller.php      # Base controller class
-│   └── Router.php          # URL routing logic
-├── public/                 # Public-facing files & assets
-│   ├── .htaccess           # Rewrite rules
-│   ├── index.php           # Front controller
-│   ├── css/, js/, scss/    # Styles & scripts
-│   ├── fonts/, image/      # Static assets
-│   └── vendors/            # Third-party plugins
-└── .git/                   # Git metadata
+├── public/
+│   ├── about.html
+│   ├── accomodation.html
+│   ├── contact.html
+│   ├── index.html
+│   ├── index.php
+│   ├── reservation.html
+│   ├── css/
+│   │   ├── _elements.css
+│   │   ├── _footer.css
+│   │   ├── _testimonial.css
+│   │   ├── _variables.css
+│   │   ├── bootstrap.css
+│   │   ├── font-awesome.min.css
+│   │   ├── responsive.css
+│   │   ├── style.css
+│   │   └── ...
+│   ├── fonts/
+│   ├── image/
+│   ├── js/
+│   ├── scss/
+│   └── vendors/
+│       ├── bootstrap-datepicker/
+│       ├── imagesloaded/
+│       ├── isotope/
+│       ├── lightbox/
+│       ├── linericon/
+│       ├── nice-select/
+│       └── owl-carousel/
+├── readme.md
+└── ...
 ```
 
 ---
@@ -57,48 +70,36 @@ HotelReservationSystemRiveraGarcia/
 **Clone repository**
 
 ```bash
-git clone https://github.com/<your-username>/HotelReservationSystemRiveraGarcia.git
-cd HotelReservationSystemRiveraGarcia
+git clone https://github.com/<your-username>/HotelReservation.git
+cd HotelReservation
 ```
 
-**Configure Apache**
+**Deploy**
 
-- Enable `mod_rewrite`
-- Point `DocumentRoot` to `public/`
+- Upload all files to your web server or use GitHub Pages for static hosting
+- Open `index.html` in your browser
 
-**Database**
+---
 
-- Create a database (e.g., `hotel_db`)
-- Import your schema or run provided SQL scripts
-- Update `config/config.php`:
+## 🔗 Related Projects
 
-```php
-define('DB_HOST', 'localhost');
-define('DB_NAME', 'hotel_db');
-define('DB_USER', 'root');
-define('DB_PASS', 'your_password');
-```
-
-**Access**
-
-- Open `http://hotel.local/` (or your configured domain)
+- **HotelReservationSql** (PHP/MySQL backend): [https://github.com/kCan1/HotelReservationSql](https://github.com/kCan1/HotelReservationSql)
 
 ---
 
 ## 🔧 Usage
 
 - **Browse Rooms:** Check availability & details
-- **Make Reservations:** Select dates and submit booking
-- **View Bills:** Generate and download invoices
-- **Contact:** Send inquiries via the Contact page
+- **Make Reservations:** Select dates and submit booking (static demo only)
+- **View Bills:** Generate and download invoices (static demo only)
+- **Contact:** Send inquiries via the Contact page (static demo only)
 
 ---
 
-## 🛡️ Security & Best Practices
+## 🛡️ Best Practices
 
-- PDO with prepared statements for all SQL queries
-- Input Sanitization using `htmlspecialchars()`
-- Session-based Authentication for users and admin
+- All data is static/demo only in this version
+- For a dynamic, database-driven version, see [HotelReservationSql](https://github.com/kCan1/HotelReservationSql)
 
 ---
 
