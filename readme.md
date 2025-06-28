@@ -96,6 +96,17 @@ cd HotelReservation
 
 ---
 
+---
+
+## Screenshots
+
+![image](https://github.com/user-attachments/assets/41d2c99e-a75c-4591-bcb4-efe0bf128c0c)
+![image](https://github.com/user-attachments/assets/440c7664-f1e2-49eb-badc-c288419c70a5)
+![image](https://github.com/user-attachments/assets/b17d528d-6ba3-4314-b7ad-5579b5cff073)
+
+
+---
+
 ## 🛡️ Best Practices
 
 - All data is static/demo only in this version
