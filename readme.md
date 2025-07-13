@@ -22,7 +22,7 @@
 - **Templating & Routing:** Static HTML with header/footer partials
 - **Date & Time:** Bootstrap Datepicker
 - **Plugins:** Owl Carousel, Lightbox, Nice Select, ImagesLoaded, Isotope
-- **Deployment:** Any static web server (GitHub Pages or Vercel etc.)
+- **Deployment:** Any static web server  (Vercel)
 
 ---
 
